@@ -1,6 +1,6 @@
 from os import environ as env
 
-from export import export
+from .export import export
 
 
 def export_addresses():
