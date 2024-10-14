@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notmuch_address_exporter"
+dynamic = ["version"]
+authors = [{name = "Tom Hubrecht", email = "pypi@mail.hubrecht.ovh"}]
+description = "A simple package to extract an address book from notmuch."
+license = {file = "LICENSE"}
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/Tom-Hubrecht/notmuch-address-exporter"
+Repository = "https://github.com/Tom-Hubrecht/notmuch-address-exporter"
+Issues = "https://github.com/Tom-Hubrecht/notmuch-address-exporter/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "notmuch_address_exporter.__VERSION__"}
