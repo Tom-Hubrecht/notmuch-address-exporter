@@ -12,6 +12,9 @@ readme = "README.md"
 classifiers = [
   "Programming Language :: Python :: 3",
 ]
+dependencies = [
+  "notmuch2",
+]
 
 [project.urls]
 Homepage = "https://github.com/Tom-Hubrecht/notmuch-address-exporter"
@@ -19,7 +22,7 @@ Repository = "https://github.com/Tom-Hubrecht/notmuch-address-exporter"
 Issues = "https://github.com/Tom-Hubrecht/notmuch-address-exporter/issues"
 
 [project.scripts]
-notmuch-export = "cli:export_addresses"
+notmuch-export = "notmuch_address_exporter.cli:export_addresses"
 
 [tool.setuptools.dynamic]
 version = {attr = "notmuch_address_exporter.__VERSION__"}
